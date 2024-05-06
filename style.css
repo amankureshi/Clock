@@ -1,0 +1,80 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     display: grid;
+     justify-content: center;
+     place-items: center;
+     min-height: 100vh;
+ }
+
+ .container {
+     position: relative;
+ }
+
+ .clock {
+     width: 300px;
+     height: 300px;
+      border-radius: 50px;    
+     border: 2px solid silver;
+     background-image: url(https://i.postimg.cc/VzWz994f/pngwing-com-5.png);
+     filter: brightness(103%);
+     background-position: center;
+     background-size: 50%;
+     background-repeat: no-repeat;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .clock span {
+     position: absolute;
+     transform: rotate(calc(30deg * var(--i)));
+     inset: 9px;
+     text-align: center;
+ }
+
+ .clock span b {
+     transform: rotate(calc(-30deg * var(--i)));
+     display: inline-block;
+     font-size: 1.3rem;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: 600;
+ }
+
+ .clock::before {
+     content: '';
+     position: absolute;
+     width: 8px;
+     height: 8px;
+     background-color: black;
+     border-radius: 50%;
+     z-index: 2;
+ }
+
+ .center {
+     text-align: center;
+     color: palevioletred;
+     font-family: Arial, Helvetica, sans-serif;
+     display: flex;
+     padding-top: 1.4rem;
+     justify-content: center;
+ }
+
+ .hand i {
+     position: absolute;
+     background-color: var(--clr);
+     width: 4px;
+     height: var(--h);
+     border-radius: 5px;
+ }
+
+ .hand {
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+ }
