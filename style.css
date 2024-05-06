@@ -9,6 +9,9 @@
      justify-content: center;
      place-items: center;
      min-height: 100vh;
+
+     background-color: #ffffff;
+
  }
 
  .container {
@@ -18,11 +21,12 @@
  .clock {
      width: 300px;
      height: 300px;
-      border-radius: 50px;    
-     border: 2px solid silver;
+      border-radius: 40px;    
+     border: 2px solid #2d2b2b;
      background-image: url(https://i.postimg.cc/VzWz994f/pngwing-com-5.png);
      filter: brightness(103%);
      background-position: center;
+        background-color: #f5efefce;
      background-size: 50%;
      background-repeat: no-repeat;
      display: flex;
